@@ -8,12 +8,17 @@ public class Main {
         System.out.println("Converts miles to kilometers and kilometers to miles");
 
         double miles = 10;
-        double kilometers = convMilesToKilometers(miles);
+        System.out.println(miles + " miles = " + convMilesToKilometers(miles) + " km");
 
-        System.out.println(miles + " miles = " + kilometers + " kilometers");
+        double km = 16;
+        System.out.println(km + " km = " + convKilometersToMiles(km) + " miles");
     }
 
     private static double convMilesToKilometers(double miles) {
         return miles * CONV_K;
+    }
+
+    private static double convKilometersToMiles(double kilometers) {
+        return kilometers / CONV_K;
     }
 }
